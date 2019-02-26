@@ -1,0 +1,6 @@
+build-admin-center-image:
+  tags:
+    - windows
+    - docker
+  script:
+    - powershell -NoProfile -ExecutionPolicy unrestricted -Command .\build-push-image.ps1
